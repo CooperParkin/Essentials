@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: AnimationPage118-129Duplicate1.ma
-//Last modified: Fri, Feb 13, 2026 04:58:19 PM
+//Last modified: Fri, Feb 13, 2026 05:43:33 PM
 //Codeset: 1252
 file -rdi 1 -ns "Ultimate_Walker_IK_v1_0_1" -rfn "Ultimate_Walker_IK_v1_0_1RN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/anthonyromrell/GitRepos/Essentials/DAGV1100and1200/Maya//scenes/Rigs/Ultimate_Walker_IK_v1.0.1.ma";
@@ -17,7 +17,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "4BF87508-4154-310A-03D1-FEBE6EF1BF11";
+fileInfo "UUID" "7D11BC8C-4BF2-8FCF-5DB1-8E9807DAAB7E";
 createNode transform -s -n "persp";
 	rename -uid "C9712CCD-754C-F86E-AD2A-73826B605734";
 	setAttr ".v" no;
@@ -36,13 +36,13 @@ createNode camera -s -n "perspShape" -p "persp";
 createNode transform -s -n "top";
 	rename -uid "0D53C428-9A42-5F0E-39DE-5CA36DA880B7";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 26.727544064706663 4.7237001991080838 -10.10631982300113 ;
-	setAttr ".r" -type "double3" -6.0000000000003393 -609.20000000001983 0 ;
+	setAttr ".t" -type "double3" 23.928230327698643 0.4219947004770106 -2.2371206287200218 ;
+	setAttr ".r" -type "double3" 2.9999999999998388 -624.40000000000327 0 ;
 createNode camera -s -n "topShape" -p "top";
 	rename -uid "69EC1580-FC4E-DA57-5DF9-64B9B9149255";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
-	setAttr ".coi" 28.987129632245157;
+	setAttr ".coi" 24.2992671754909;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "top";
 	setAttr ".den" -type "string" "top_depth";
@@ -85,20 +85,20 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "DDEAF49A-445B-5950-8DB9-5880ABEA2E9A";
+	rename -uid "DDF34048-42B8-7946-AD76-32BCDCBC9201";
 	setAttr -s 4 ".lnk";
 	setAttr -s 4 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "DFE15D85-4AB8-F93A-F35A-3DAD366B11D5";
+	rename -uid "5FB22007-44C6-83B6-A2E9-BDA29F435130";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "3F4AB8E6-4F7A-E691-F6A3-24A8491AA103";
+	rename -uid "040AE820-4177-D992-0D45-7F8C4EF45E43";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "3AE855AF-44B3-14FE-2878-FD93E99C6A15";
+	rename -uid "B30B445F-47CE-AB04-A486-949A79CCC6BE";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "AC91CB9A-E140-CD7A-D861-648C94E9970F";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "2A14F066-4DA1-8A24-CFA6-AD856C600DA1";
+	rename -uid "52A945A5-49A1-FA18-61A4-7BBE53996C1D";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "48A7C263-8948-E2C3-249C-098B228EC5C9";
 	setAttr ".g" yes;
@@ -639,11 +639,11 @@ createNode animCurveTU -n "walker_rt_foot_ctrl_visibility";
 	setAttr ".ktv[0]"  25 1;
 	setAttr ".kot[0]"  5;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "E579826C-45E7-D2B4-F401-C78181AC8066";
+	rename -uid "309DECFC-4072-AA54-CE7D-CBBC7FB088F9";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
-	setAttr ".o" 22;
-	setAttr ".unw" 22;
+	setAttr ".o" 3;
+	setAttr ".unw" 3;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1

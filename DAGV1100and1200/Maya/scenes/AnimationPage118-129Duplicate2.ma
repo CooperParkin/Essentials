@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: AnimationPage118-129Duplicate2.ma
-//Last modified: Fri, Feb 13, 2026 05:34:34 PM
+//Last modified: Fri, Feb 13, 2026 05:41:50 PM
 //Codeset: 1252
 file -rdi 1 -ns "Ultimate_Walker_IK_v1_0_1" -rfn "Ultimate_Walker_IK_v1_0_1RN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/anthonyromrell/GitRepos/Essentials/DAGV1100and1200/Maya//scenes/Rigs/Ultimate_Walker_IK_v1.0.1.ma";
@@ -17,7 +17,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "32D3019F-435E-729D-56D6-26A244E730FF";
+fileInfo "UUID" "674F211F-4855-6858-2FE1-7A8CE70DD47B";
 createNode transform -s -n "persp";
 	rename -uid "C9712CCD-754C-F86E-AD2A-73826B605734";
 	setAttr ".v" no;
@@ -36,13 +36,13 @@ createNode camera -s -n "perspShape" -p "persp";
 createNode transform -s -n "top";
 	rename -uid "0D53C428-9A42-5F0E-39DE-5CA36DA880B7";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 21.187319433896036 3.5860350815919335 -11.135976234490554 ;
-	setAttr ".r" -type "double3" -5.3999999999968145 -602.40000000001612 0 ;
+	setAttr ".t" -type "double3" 18.912296173338031 3.4853274951343982 -18.139921461876085 ;
+	setAttr ".r" -type "double3" -3.6000000000009975 -586.39999999997735 0 ;
 createNode camera -s -n "topShape" -p "top";
 	rename -uid "69EC1580-FC4E-DA57-5DF9-64B9B9149255";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
-	setAttr ".coi" 24.299267175491575;
+	setAttr ".coi" 26.539894641547434;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "top";
 	setAttr ".den" -type "string" "top_depth";
@@ -665,11 +665,11 @@ createNode animCurveTU -n "walker_rt_foot_ctrl_visibility";
 	setAttr ".ktv[0]"  25 1;
 	setAttr ".kot[0]"  5;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "3A7AE3E5-4C08-5C4E-B310-C593A45EA25D";
+	rename -uid "C28B1928-45BB-D283-FC74-05AA06E6B7F8";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
-	setAttr ".o" 17;
-	setAttr ".unw" 17;
+	setAttr ".o" 15;
+	setAttr ".unw" 15;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
